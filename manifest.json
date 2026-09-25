@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Advanced AI Page Reader",
+  "version": "2.1",
+  "description": "הקראת דפי אינטרנט באמצעות קולות AI עם שליטה מלאה וסימון פסקאות",
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://texttospeech.googleapis.com/*",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

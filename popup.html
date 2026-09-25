@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 250px;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 14px;
+      margin: 0;
+      color: #202124;
+    }
+    .btn-main {
+      width: 100%;
+      padding: 10px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .btn-main:hover { background-color: #1557b0; }
+    hr { border: 0; border-top: 1px solid #dadce0; margin: 10px 0; }
+    label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 4px; }
+    input[type="password"] {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+    .status { font-size: 12px; text-align: center; min-height: 16px; margin-top: 4px; }
+    .btn-secondary {
+      width: 100%;
+      padding: 6px;
+      background: #f1f3f4;
+      border: 1px solid #dadce0;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 12px;
+    }
+    .btn-secondary:hover { background: #e8eaed; }
+    .hidden { display: none !important; }
+    .key-saved-badge {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: #1e8e3e;
+      background: #e6f4ea;
+      padding: 6px 10px;
+      border-radius: 4px;
+      margin-bottom: 4px;
+    }
+    .btn-link {
+      background: none;
+      border: none;
+      color: #1a73e8;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 11px;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <button id="startReadingBtn" class="btn-main">▶ הקרא דף זה</button>
+
+  <div id="apiKeySection">
+    <hr>
+    <label for="apiKey">מפתח API של Google Cloud:</label>
+    <input type="password" id="apiKey" placeholder="הדבק מפתח כאן...">
+    <button id="saveBtn" class="btn-secondary">שמור מפתח</button>
+  </div>
+
+  <div id="apiKeySavedBadge" class="key-saved-badge hidden">
+    <span>✔ מפתח API מוגדר</span>
+    <button id="changeKeyBtn" class="btn-link">שנה מפתח</button>
+  </div>
+
+  <div id="status" class="status"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
