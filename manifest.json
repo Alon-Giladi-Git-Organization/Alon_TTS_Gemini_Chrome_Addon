@@ -1,18 +1,26 @@
 {
   "manifest_version": 3,
   "name": "Advanced AI Page Reader",
-  "version": "2.1",
-  "description": "הקראת דפי אינטרנט באמצעות קולות AI עם שליטה מלאה וסימון פסקאות",
+  "version": "2.2",
+  "description": "הקראת דפי אינטרנט ומסמכי Google Docs באמצעות AI",
   "permissions": [
     "storage",
     "scripting",
-    "activeTab"
+    "activeTab",
+    "identity"
   ],
   "host_permissions": [
     "https://texttospeech.googleapis.com/*",
+    "https://docs.googleapis.com/*",
     "http://*/*",
     "https://*/*"
   ],
+  "oauth2": {
+    "client_id": "9826139997-4ngegll5irdmnfgh0buj5d13r2bsecaq.apps.googleusercontent.com.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/documents.readonly"
+    ]
+  },
   "action": {
     "default_popup": "popup.html"
   },
