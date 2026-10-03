@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Advanced AI Page Reader",
-  "version": "2.2",
+  "version": "2.3",
   "description": "הקראת דפי אינטרנט ומסמכי Google Docs באמצעות AI",
   "permissions": [
     "storage",
@@ -16,7 +16,7 @@
     "https://*/*"
   ],
   "oauth2": {
-    "client_id": "9826139997-4ngegll5irdmnfgh0buj5d13r2bsecaq.apps.googleusercontent.com.apps.googleusercontent.com",
+    "client_id": "9826139997-4ngegll5irdmnfgh0buj5d13r2bsecaq.apps.googleusercontent.com",
     "scopes": [
       "https://www.googleapis.com/auth/documents.readonly"
     ]
